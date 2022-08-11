@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties Pie</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Properties Pie</h1>
+    <br>
+    <!-- <div class="control">
+        <div class="input">
+            <label for="unallocated">
+                <input type="color" name="color1" id="color1">
+                <span class="control-name">Unallocated</span>
+            </label>
+            <input type="range" name="unallocated" id="unallocated" min="0" max="100" value="100">
+            <span class="control-value">100</span>
+        </div>
+        <div class="input">
+            <label for="Sexiness">
+                <input type="color" name="color1" id="color1">
+                <span class="control-name">sexiness</span>
+            </label>
+            <input type="range" name="sexiness" id="sexiness" min="0" max="100" value="100">
+            <span class="control-value">100</span>
+        </div>
+    </div> -->
+    <table class="control-dashboard">
+        <thead>
+            <!-- <td>Color</td> -->
+            <td>Name</td>
+            <td>Bar</td>
+            <td>Value</td>
+        </thead>
+        <tbody>
+            <tr class="add-new" onclick="addNew()">
+                <!-- <td colspan="4">+</td> -->
+                <td colspan="3">+</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- <td><input type="color" name="control-color-0" id="control-color-0"></td> -->
+                <td class="control-name">Unallocated</td>
+                <td>
+                    <input type="range" name="control-bar-0" id="control-bar-0" disabled min="0" max="100" value="100">
+                </td>
+                <td class="control-value" id="unallocatedValue">100%</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <button onclick="drawChart()">Draw</button>
+    <div id="pie"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

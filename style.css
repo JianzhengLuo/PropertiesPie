@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input {
+    margin: 10px auto 0 0;
+}
+
+.control-name,
+.control-value {
+    margin: 0 3vw;
+} */
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px #d0d7de solid;
+    height: 3vh;
+}
+
+.add-new {
+    font-size: x-large;
+    text-align: center;
+}
+
+#pie {
+    width: 100vw;
+    height: 100vw;
+}
+
+button {
+    width: 80vw;
+    margin: 1vh;
+    height: 4vh;
+}
+
+input[type="color"] {
+    display: none;
+}
